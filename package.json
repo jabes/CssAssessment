@@ -31,6 +31,8 @@
     "postinstall": "bower install && gulp build",
     "build:dev": "gulp build-watch",
     "build:prod": "gulp build",
-    "serve": "http-server public"
+    "serve": "http-server public",
+    "bower": "bower",
+    "gulp": "gulp"
   }
 }

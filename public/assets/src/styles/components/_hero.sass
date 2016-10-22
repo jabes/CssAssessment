@@ -1,0 +1,83 @@
+@import "../variables"
+@import "../functions"
+
+.hero
+  padding: 70px 115px
+  display: flex
+  flex-direction: row
+  .col-left
+    flex: 0
+  .col-right
+    flex: 1
+    padding-left: 24px
+
+  .heading
+    margin: 82px 0 26px 0
+    font-size: 5.4rem
+    letter-spacing: 0.33rem
+    line-height: 4.8rem
+    .sub
+      display: block
+      font-size: 2.4rem
+      font-weight: normal
+      letter-spacing: 0.05rem
+
+  .product-info
+    .add-to-cart
+      padding-right: 195px
+      margin-bottom: 58px
+      .price
+        float: left
+        font-weight: normal
+        font-size: 2.45rem
+      select[name="quantity"]
+        float: right
+        padding: 9px 22px
+        margin-top: 5px
+        font-size: 1.4rem
+      button.btn
+        clear: both
+        display: inline-block
+        width: 100%
+        padding: 18px 28px
+        margin-top: 20px
+        font-size: 1.17rem
+        text-align: left
+    .rating
+      .star
+        font-size: 0
+        line-height: 0
+        vertical-align: top
+        display: inline-block
+        width: 18px
+        height: 18px
+        background: img-url('star.svg') no-repeat center center
+        &.active
+          background-image: img-url('star-active.svg')
+        &:not(:first-child)
+          margin-left: .4rem
+    .description
+      margin-top: 0
+      margin-bottom: 50px
+      font-size: 1.125rem
+      padding-right: 90px
+      line-height: 1.7rem
+    .protection-plan
+      padding: 24px 30px
+      margin-right: 90px
+      background: #FFFFFF
+      h3
+        margin: 0 0 5px 0
+      .checkbox,
+      .disclaimer
+        font-size: .88rem
+        font-weight: bold
+      .checkbox
+        margin-bottom: 10px
+        input[type="checkbox"]
+          margin-right: 10px
+        .cost
+          margin-left: 18px
+          color: $color-blue
+      .disclaimer
+        margin: 0

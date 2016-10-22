@@ -5,13 +5,58 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CSS Assessment</title>
-  <link rel="stylesheet" type="text/css" href="/assets/dist/css/build.css"/>
-  <script type="text/javascript" src="/assets/dist/js/build.js"></script>
-  <script type="text/javascript" src="//localhost:35729/livereload.js"></script>
+  <link rel="stylesheet" href="/assets/dist/css/build.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <script src="/assets/dist/js/build.js"></script>
+  <script src="//localhost:35729/livereload.js"></script>
 </head>
 <body>
 
-This is a test
+<main id="CssAssessment">
+
+  <section class="hero">
+    <div class="col-left">
+      <img class="feature-graphic" src="/assets/dist/img/samsung-phone.png"/>
+    </div>
+    <div class="col-right">
+      <h1 class="heading">Samsung <span class="sub">Galaxy S5</span></h1>
+      <form class="product-info" action="#">
+        <div class="add-to-cart">
+          <strong class="price">$719.99</strong>
+          <select name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <button type="button" class="btn">Add to cart</button>
+        </div>
+        <div class="rating">
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star active">★</span>
+          <span class="star">☆</span>
+        </div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui enim. Nam eu feugiat ex. Nullam sed placerat dui, in tempus.</p>
+        <div class="protection-plan">
+          <h3>Add Product Protection Plan</h3>
+          <div class="checkbox">
+            <label><input type="checkbox" name="2year"/> 2-Year Protection Plan*</label>
+            <span class="cost">$105.00</span>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="1year"/> 1-Year Protection Plan*</label>
+            <span class="cost">$60.00</span>
+          </div>
+          <p class="disclaimer">*A $99 deductible applies to all claims.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
 
 </body>
 </html>

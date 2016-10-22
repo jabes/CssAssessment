@@ -1,0 +1,15 @@
+@import "functions"
+
+=ghost($scale: 1)
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: (1800px / $scale)
+    height: (3875px / $scale)
+    background-image: img-url('ghost/CSS-assessment.jpg')
+    background-size: contain
+    opacity: 0.5

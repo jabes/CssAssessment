@@ -2,5 +2,7 @@
   "private": true,
   "name": "css-assessment",
   "devDependencies": {
+    "normalize.scss": "5.0.4",
+    "breakpoint-sass": "2.7.0"
   }
 }

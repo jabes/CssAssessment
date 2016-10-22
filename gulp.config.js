@@ -96,7 +96,9 @@ config.plugins = {
     suffix: '.min'
   },
   sass: {
-    includePaths: [], // An array of paths that libsass can look in to attempt to resolve your @import declarations
+    includePaths: [
+      config.paths.bower_components
+    ], // An array of paths that libsass can look in to attempt to resolve your @import declarations
     indentedSyntax: true, // Enable Sass Indented Syntax for parsing the data string or file
     indentType: 'space', // Used to determine whether to use space or tab character for indentation
     indentWidth: 2, // Used to determine the number of spaces or tabs to be used for indentation
