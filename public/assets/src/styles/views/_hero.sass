@@ -13,15 +13,16 @@ section.hero
     padding-left: 24px
 
   .heading
-    margin: 82px 0 26px 0
+    margin: 82px 0 23px 0
     font-size: 5.4rem
     letter-spacing: 0.33rem
-    line-height: 4.8rem
+    line-height: .9
     .sub
       display: block
       font-size: 2.4rem
       font-weight: normal
       letter-spacing: 0.05rem
+      line-height: 2.1
 
   .product-info
     .add-to-cart
@@ -31,17 +32,25 @@ section.hero
         float: left
         font-weight: normal
         font-size: 2.45rem
-      select[name="quantity"]
+      select,
+      button
+        cursor: pointer
+        display: inline-block
+        border: none
+        border-radius: 4px
+        background: white img-url('arrow-down.svg') no-repeat calc(100% - 20px) 50%
+      select
         float: right
         padding: 7px (20px + 13px + 12px) 7px 22px
-        margin-top: 5px
+        margin-top: 4px
         font-size: 1.5rem
-      button.btn
+        -webkit-appearance: none
+      button
         clear: both
         width: 100%
         padding: 17px (20px + 13px + 12px) 17px 28px
-        margin-top: 22px
-        font-size: 1.17rem
+        margin-top: 20px
+        font-size: 1.1rem
         text-align: left
 
     .rating
@@ -60,10 +69,10 @@ section.hero
 
     .description
       margin-top: 0
-      margin-bottom: 54px
-      font-size: 1.125rem
+      margin-bottom: 56px
       padding-right: 90px
-      line-height: 1.7rem
+      font-size: 1.125rem
+      line-height: 1.45
 
     .protection-plan
       padding: 24px 30px
