@@ -5,6 +5,7 @@
 !.editorconfig
 !.jshintrc
 
+public/index.html
 dist/
 bower_components/
 node_modules/
