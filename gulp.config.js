@@ -1,28 +1,29 @@
 var config = {};
-
 config.paths = {};
 config.paths.basedir = global.process.env.INIT_CWD;
 config.paths.public = config.paths.basedir + '/public';
 config.paths.node_modules = config.paths.basedir + '/node_modules';
 config.paths.bower_components = config.paths.basedir + '/bower_components';
 config.paths.tasks = config.paths.basedir + '/gulp-tasks';
-config.paths.views = config.paths.public + '/views';
 
 config.paths.src = {
   styles: config.paths.public + '/assets/src/styles',
   scripts: config.paths.public + '/assets/src/scripts',
-  images: config.paths.public + '/assets/src/images'
+  images: config.paths.public + '/assets/src/images',
+  views: config.paths.public + '/views'
 };
 
 config.paths.dist = {
   styles: config.paths.public + '/assets/dist/css',
   scripts: config.paths.public + '/assets/dist/js',
-  images: config.paths.public + '/assets/dist/img'
+  images: config.paths.public + '/assets/dist/img',
+  views: config.paths.public + '/views'
 };
 
 config.files = {
   jshintrc: config.paths.basedir + '/.jshintrc',
   src: {
+    views: 'index.src.html',
     styles: [
       config.paths.src.styles + '/app.sass'
     ],
@@ -31,22 +32,30 @@ config.files = {
     ]
   },
   dist: {
+    views: 'index.html',
     styles: 'build.css',
     scripts: 'build.js'
   }
 };
 
 config.match = {
-  views: config.paths.views + '/**/*',
   src: {
     styles: config.paths.src.styles + '/**/*',
     scripts: config.paths.src.scripts + '/**/*',
-    images: config.paths.src.images + '/**/*'
+    images: config.paths.src.images + '/**/*',
+    views: {
+      files: config.paths.public + '/' + config.files.src.views,
+      paths: config.paths.src.views
+    }
   },
   dist: {
     styles: config.paths.dist.styles + '/**/*',
     scripts: config.paths.dist.scripts + '/**/*',
-    images: config.paths.dist.images + '/**/*'
+    images: config.paths.dist.images + '/**/*',
+    views: {
+      files: config.paths.public + '/' + config.files.dist.views,
+      paths: config.paths.dist.views
+    }
   }
 };
 
@@ -81,6 +90,10 @@ config.plugins = {
       keyframes: true, // Pass false to disable discarding unused keyframe rules.
       namespace: true // Pass false to disable discarding unused namespace rules.
     }
+  },
+  fileInclude: {
+    prefix: "@@",
+    basepath: '@file'
   },
   imagemin: {
     optimizationLevel: 5, // Optimization level between 0 and 7

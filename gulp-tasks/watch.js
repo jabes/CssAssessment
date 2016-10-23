@@ -16,6 +16,18 @@ module.exports = function (gulp, plugins, config) {
         gulp.start('scripts', done);
       }));
     plugins.watch(
+      config.match.src.views.files,
+      config.plugins.watch,
+      plugins.batch(function (events, done) {
+        gulp.start('views', done);
+      }));
+    plugins.watch(
+      config.match.src.views.paths,
+      config.plugins.watch,
+      plugins.batch(function (events, done) {
+        gulp.start('views', done);
+      }));
+    plugins.watch(
       config.match.src.images,
       config.plugins.watch,
       plugins.batch(function (events, done) {
@@ -23,7 +35,8 @@ module.exports = function (gulp, plugins, config) {
       }));
     // Watch build files to trigger livereload
     plugins.watch([
-      config.match.views,
+      config.match.dist.views.files,
+      config.match.dist.views.paths,
       config.match.dist.styles,
       config.match.dist.scripts,
       config.match.dist.images

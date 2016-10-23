@@ -32,10 +32,11 @@ gulp.task('clear-cache',       function (done) { return getTask('clear-cache', d
 gulp.task('images',            getTask('images'));
 gulp.task('scripts',           getTask('scripts'));
 gulp.task('styles',            getTask('styles'));
+gulp.task('views',             getTask('views'));
 gulp.task('watch',             getTask('watch'));
 
 gulp.task('build', function(callback) {
-  runSequence('clean', ['styles', 'scripts'], 'images', callback);
+  runSequence('clean', ['styles', 'scripts', 'views'], 'images', callback);
 });
 
 gulp.task('build-watch', function(callback) {
