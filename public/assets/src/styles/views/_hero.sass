@@ -3,7 +3,7 @@
 @import "../mixins"
 
 section.hero
-  padding: 70px 115px 2px 115px
+  padding: 2px 115px
   display: flex
   flex-direction: row
   .col-left
@@ -52,20 +52,6 @@ section.hero
         margin-top: 20px
         font-size: 1.1rem
         text-align: left
-
-    .rating
-      font-size: 0
-      .star
-        line-height: 0
-        vertical-align: top
-        display: inline-block
-        width: 18px
-        height: 18px
-        background: img-url('star.svg') no-repeat center center
-        &.active
-          background-image: img-url('star-active.svg')
-        &:not(:first-child)
-          margin-left: 11px
 
     .description
       margin-top: 0

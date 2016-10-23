@@ -45,3 +45,17 @@
     transform: translateX(-$left)
   @else
     margin-left: -($width / 2)
+
+=calc-column-widths($total: 3, $margin: 0)
+  @if unit($margin) == %
+    // [32%] 2% [32%] 2% [32%]
+    width: (100% / $total) - ($margin * ($total - 1) / $total)
+  @else if $margin > 0
+    // [calc(33.33%-6.66px)] 10px [calc(33.33%-6.66px)] 10px [calc(33.33%-6.66px)]
+    width: calc(#{100% / $total} - #{$margin * ($total - 1) / $total})
+  @else
+    // [33.33%][33.33%][33.33%]
+    width: 100% / $total
+  @if $total > 1 and $margin > 0
+    &:not(:last-child):not(:nth-of-type(#{$total}n))
+      margin-right: $margin

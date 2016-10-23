@@ -1,0 +1,82 @@
+@import "../variables"
+@import "../functions"
+@import "../mixins"
+
+section.reviews
+  .row
+    display: flex
+    flex-direction: row
+    .col-left
+      flex: 0 0 auto
+      width: 396px
+    .col-right
+      flex: 1 1 auto
+
+  .heading-block
+    background-color: $color-green
+    h2
+      // override global values
+      padding: 20px 25px
+      letter-spacing: .1rem
+
+  .more-details
+    margin-top: 144px
+
+  .overall-score
+    padding: 22px 25px
+    margin-bottom: 22px
+    h3.heading
+      margin: 0
+      font-weight: normal
+      font-size: 1.4rem
+      letter-spacing: -.025rem
+    p.value
+      margin: 0
+      font-size: 7.5rem
+      font-weight: bold
+      line-height: 1.1
+
+  .review-blocks
+    background: white
+    padding: 30px
+    .review-block
+      display: flex
+      flex-direction: row
+      &:not(:last-child)
+        margin-bottom: 55px
+      .comment
+        flex: 1 1 auto
+        padding-right: 45px
+        h3
+          margin: 4px 0
+          font-size: 1.86rem
+        h6
+          margin: 0 0 30px 0
+          font-size: .82rem
+        p
+          margin: 0
+          font-size: 1.12rem
+          line-height: 1.55
+      .categories
+        flex: 0 0 auto
+        width: 234px
+        padding-top: 28px
+        .category
+          margin-bottom: 25px
+          h6
+            margin: 0 0 7px 0
+            font-size: 1rem
+          .category-scores
+            font-size: 0
+            display: block
+            width: 100%
+            padding-left: 3px
+            .category-score
+              display: inline-block
+              vertical-align: top
+              +calc-column-widths(5, .3rem)
+              height: 4px
+              line-height: 0
+              background-color: $color-bg
+              &.active
+                background-color: $color-green
