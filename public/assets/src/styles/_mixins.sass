@@ -13,3 +13,35 @@
     background-image: img-url('ghost/CSS-assessment.jpg')
     background-size: contain
     opacity: 0.5
+
+=center($width: auto, $height: auto, $position: absolute, $left: 50%, $top: 50%)
+  position: $position
+  left: $left
+  top: $top
+  @if $width == auto and $height == auto
+    transform: translate(-$left, -$top)
+  @else if $width == auto
+    transform: translateX(-$left)
+    margin-top: -($height / 2)
+  @else if $height == auto
+    transform: translateY(-$top)
+    margin-left: -($width / 2)
+  @else
+    margin-top: -($height / 2)
+    margin-left: -($width / 2)
+
+=vertical-center($height: auto, $position: absolute, $top: 50%)
+  position: $position
+  top: $top
+  @if $height == auto
+    transform: translateY(-$top)
+  @else
+    margin-top: -($height / 2)
+
+=horizontal-center($width: auto, $position: absolute, $left: 50%)
+  position: $position
+  left: $left
+  @if $width == auto
+    transform: translateX(-$left)
+  @else
+    margin-left: -($width / 2)
