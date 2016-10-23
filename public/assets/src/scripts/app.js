@@ -3,17 +3,15 @@ console.log('99 bugs in the code');
 console.log('patch one down, compile it around');
 console.log('117 bugs in the code');
 
-(()=> {
+(()=>{
 
   'use strict';
 
-  const importNode = (name) => {
-    let container = document.getElementById('CssAssessment');
-    let link = document.querySelector(`link[href="views/${name}.html"]`);
+  const container = document.getElementById('CssAssessment');
+  const links = document.querySelectorAll('link[rel=import]');
+  for (let link of links) {
     let content = document.importNode(link.import.body.firstChild, true);
     container.appendChild(content);
-  };
-
-  importNode('hero');
+  }
 
 })();
