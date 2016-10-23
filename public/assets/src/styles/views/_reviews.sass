@@ -74,8 +74,12 @@ section.reviews
             .category-score
               display: inline-block
               vertical-align: top
-              +calc-column-widths(5, .3rem)
+              // firefox does not draw properly with calc here
+              //+calc-column-widths(5, .3rem)
+              width: 43px
               height: 4px
+              &:not(:first-child)
+                margin-left: 4px
               background-color: $color-bg
               &.active
                 background-color: $color-green
