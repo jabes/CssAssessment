@@ -95,6 +95,9 @@ config.plugins = {
     prefix: "@@",
     basepath: '@file'
   },
+  htmlmin: {
+    collapseWhitespace: true
+  },
   imagemin: {
     optimizationLevel: 5, // Optimization level between 0 and 7
     progressive: true, // Lossless conversion to progressive
