@@ -9,8 +9,12 @@
 
 #### How To Use
 
-Start dev server and open localhost url
+1. Open http file directly in browser
+```
+open public/index.html
+```
 
+2. Start dev server and open localhost url
 ```
 npm start -- -o
 ```
