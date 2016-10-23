@@ -15,15 +15,18 @@ module.exports = function (gulp, plugins, config) {
       plugins.batch(function (events, done) {
         gulp.start('scripts', done);
       }));
+    plugins.watch(
+      config.match.src.images,
+      config.plugins.watch,
+      plugins.batch(function (events, done) {
+        gulp.start('images', done);
+      }));
     // Watch build files to trigger livereload
     plugins.watch([
-        config.match.views,
-        config.match.dist.styles,
-        config.match.dist.scripts
-      ],
-      config.plugins.watch,
-      function (file) {
-        plugins.livereload.changed(file);
-      });
+      config.match.views,
+      config.match.dist.styles,
+      config.match.dist.scripts,
+      config.match.dist.images
+    ]).on('change', plugins.livereload.changed);
   };
 };

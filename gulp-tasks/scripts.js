@@ -1,6 +1,7 @@
 module.exports = function (gulp, plugins, config) {
   return function () {
     gulp.src(config.files.src.scripts)
+      .pipe(plugins.plumber(config.plugins.plumber))
       .pipe(plugins.jshint(config.files.jshintrc))
       .pipe(plugins.jshint.reporter(require('jshint-stylish')))
       .pipe(plugins.concat(config.files.dist.scripts))

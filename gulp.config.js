@@ -94,6 +94,15 @@ config.plugins = {
     start: false, // Automatically start
     quiet: false // Disable console logging
   },
+  plumber: {
+    errorHandler: function (err) {
+      var util = require('gulp-util');
+      var message = util.colors.red(err);
+      util.beep();
+      util.log(message);
+      this.emit('end');
+    }
+  },
   rename: {
     suffix: '.min'
   },
