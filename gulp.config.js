@@ -6,6 +6,7 @@ config.paths.public = config.paths.basedir + '/public';
 config.paths.node_modules = config.paths.basedir + '/node_modules';
 config.paths.bower_components = config.paths.basedir + '/bower_components';
 config.paths.tasks = config.paths.basedir + '/gulp-tasks';
+config.paths.views = config.paths.public + '/views';
 
 config.paths.src = {
   styles: config.paths.public + '/assets/src/styles',
@@ -36,6 +37,7 @@ config.files = {
 };
 
 config.match = {
+  views: config.paths.views + '/**/*',
   src: {
     styles: config.paths.src.styles + '/**/*',
     scripts: config.paths.src.scripts + '/**/*',

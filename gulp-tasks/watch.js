@@ -17,6 +17,7 @@ module.exports = function (gulp, plugins, config) {
       }));
     // Watch build files to trigger livereload
     plugins.watch([
+        config.match.views,
         config.match.dist.styles,
         config.match.dist.scripts
       ],
