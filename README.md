@@ -11,7 +11,6 @@
 
 1. Open http file directly in browser
 ```
-npm run build
 open public/index.html
 ```
 
