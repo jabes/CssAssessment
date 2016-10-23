@@ -3,13 +3,24 @@
 @import "../mixins"
 
 section.hero
+  width: 100%
   padding: 2px 115px
   display: flex
   flex-direction: row
   .col-left
-    flex: 0 0 auto
+    width: 479px
+    flex-grow: 0
+    flex-shrink: 0
+    flex-basis: auto
+    align-self: flex-start
+    margin: 0
   .col-right
-    flex: 1 1 auto
+    width: 511px
+    flex-grow: 0
+    flex-shrink: 0
+    flex-basis: auto
+    align-self: flex-start
+    margin: 0
     padding-left: 24px
 
   .heading

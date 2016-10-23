@@ -7,6 +7,8 @@ console.log('117 bugs in the code');
 
   'use strict';
 
+  window.flexibility(document.documentElement);
+
   const container = document.getElementById('CssAssessment');
   const links = document.querySelectorAll('link[rel=import]');
   for (let link of links) {

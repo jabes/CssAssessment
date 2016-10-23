@@ -28,6 +28,7 @@ config.files = {
       config.paths.src.styles + '/app.sass'
     ],
     scripts: [
+      config.paths.bower_components + '/flexibility/flexibility.js',
       config.paths.src.scripts + '/app.js'
     ]
   },

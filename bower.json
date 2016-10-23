@@ -3,6 +3,7 @@
   "name": "css-assessment",
   "devDependencies": {
     "normalize.scss": "5.0.4",
-    "breakpoint-sass": "2.7.0"
+    "breakpoint-sass": "2.7.0",
+    "flexibility": "2.0.1"
   }
 }

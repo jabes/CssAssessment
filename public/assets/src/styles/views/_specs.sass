@@ -3,14 +3,26 @@
 @import "../mixins"
 
 section.specs
+  display: block
+  width: 100%
   .row
+    width: 100%
     display: flex
     flex-direction: row
     .col-left
-      flex: 1 1 auto
+      width: 824px
+      flex-grow: 0
+      flex-shrink: 0
+      flex-basis: auto
+      align-self: flex-start
+      margin: 0
     .col-right
-      flex: 0 0 auto
       width: 396px
+      flex-grow: 0
+      flex-shrink: 0
+      flex-basis: auto
+      align-self: flex-start
+      margin: 0
     &.specs
       background: white
       .col-right

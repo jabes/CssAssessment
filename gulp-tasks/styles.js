@@ -3,6 +3,7 @@ module.exports = function (gulp, plugins, config) {
     gulp.src(config.files.src.styles)
       .pipe(plugins.plumber(config.plugins.plumber))
       .pipe(plugins.sass(config.plugins.sass))
+      .pipe(plugins.postcss([require('postcss-flexibility')]))
       .pipe(plugins.autoprefixer(config.plugins.autoprefixer))
       .pipe(plugins.concat(config.files.dist.styles))
       .pipe(gulp.dest(config.paths.dist.styles))
