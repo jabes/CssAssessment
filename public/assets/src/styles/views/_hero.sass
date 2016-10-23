@@ -1,14 +1,15 @@
 @import "../variables"
 @import "../functions"
+@import "../mixins"
 
-.hero
-  padding: 70px 115px
+section.hero
+  padding: 70px 115px 2px 115px
   display: flex
   flex-direction: row
   .col-left
-    flex: 0
+    flex: 0 0 auto
   .col-right
-    flex: 1
+    flex: 1 1 auto
     padding-left: 24px
 
   .heading

@@ -1,0 +1,116 @@
+@import "../variables"
+@import "../functions"
+@import "../mixins"
+
+section.features
+  display: flex
+  flex-direction: row
+  .col-left
+    flex: 0 0 auto
+    width: 396px
+  .col-right
+    flex: 1 1 auto
+
+  button.more-details
+    cursor: pointer
+    display: block
+    margin: auto
+    width: 104px
+    height: 104px
+    background: white img-url("arrow-down-alt.svg") no-repeat 50% 42%
+    border: none
+    border-radius: 100%
+    font-size: .86rem
+    line-height: 130px
+    transition: all 100ms ease-out
+    &:hover
+      transform: scale(1.05)
+
+  .heading-block
+    position: relative
+    width: 100%
+    height: 396px
+    background-color: $color-pink
+    h2
+      margin: 0
+      padding: 20px 32px
+      position: absolute
+      left: 0
+      bottom: 0
+      color: white
+      font-size: 3.55rem
+      font-weight: normal
+      letter-spacing: .1rem
+      line-height: 4rem
+      span
+        display: block
+        color: inherit
+        font-weight: bold
+        letter-spacing: .28rem
+
+  .video-thumbs
+    font-size: 0
+    button.video-thumb
+      cursor: pointer
+      position: relative
+      display: inline-block
+      margin: 0
+      padding: 0
+      width: (396px / 2)
+      height: (396px / 2)
+      background: black
+      border: none
+      &.thumb-1
+        margin-left: 50%
+      &.thumb-2
+        margin-right: 50%
+      &:hover
+        &::after
+          transform: scale(1.05)
+        img
+          opacity: .75
+      &::after
+        $size: 54px
+        +center($size, $size)
+        width: $size
+        height: $size
+        font-family: sans-serif
+        font-size: 2rem
+        content: "►"
+        line-height: ($size - 4px)
+        text-align: center
+        text-indent: 5px
+        background: rgba(white, .25)
+        color: white
+        border: 4px solid white
+        border-radius: 100%
+        transition: all 100ms ease-out
+      img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: fill
+        opacity: .6
+        transition: all 100ms ease-out
+
+  .info-blocks
+    background: white
+    margin-top: 94px
+    padding: 10px
+    column-count: 2
+    column-gap: 26px
+    .info-block
+      display: inline-block
+      vertical-align: top
+      padding: 14px 14px 14px 24px
+      h6
+        margin: 0 0 2px 0
+        font-size: 1.1rem
+        font-weight: bold
+        letter-spacing: .05rem
+      p
+        margin: 0
+        font-size: 1.1rem
+        line-height: 1.74rem
+        letter-spacing: .01rem
+

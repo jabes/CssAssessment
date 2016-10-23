@@ -6,18 +6,24 @@
 
 html
   height: 100%
+  *
+    font-family: 'Open Sans', sans-serif
+    color: $color-font
   body
+    //+ghost
     min-height: 100%
     margin: 0
     background-color: $color-bg
     overflow-x: hidden
-    //+ghost
-  *
-    font-family: 'Open Sans', sans-serif
-    color: $color-font
+    box-sizing: border-box
+    *,
+    *::before,
+    *::after
+      box-sizing: inherit
 
 #CssAssessment
   width: 1220px
   margin: 0 auto
-  @import "components/global"
-  @import "components/hero"
+  @import "global"
+  @import "views/hero"
+  @import "views/features"
