@@ -4,6 +4,7 @@
 !.gitignore
 !.editorconfig
 !.jshintrc
+!.jshintignore
 
 public/index.html
 dist/
