@@ -6,7 +6,7 @@
 !.jshintrc
 !.jshintignore
 
-public/index.html
-dist/
+#public/index.html
+#public/assets/dist/
 bower_components/
 node_modules/

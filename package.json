@@ -1,7 +1,22 @@
 {
   "name": "css-assessment",
-  "author": "Justin Bull <bull.justin@gmail.com>",
+  "description": "A technical assessment of CSS layouts.",
   "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Justin Bull",
+    "email": "bull.justin@gmail.com",
+    "url": "http://jbull.ca/"
+  },
+  "homepage": "https://jabes.github.io/css-assessment/public",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jabes/css-assessment"
+  },
+  "engines": {
+    "node": "8.4.x"
+  },
   "devDependencies": {
     "babel-polyfill": "6.16.0",
     "babel-preset-es2015": "6.16.0",
@@ -15,9 +30,9 @@
     "gulp-concat": "2.6.0",
     "gulp-cssnano": "2.1.2",
     "gulp-file-include": "1.0.0",
+    "gulp-htmlmin": "3.0.0",
     "gulp-imagemin": "3.0.3",
     "gulp-jshint": "2.0.1",
-    "gulp-htmlmin": "3.0.0",
     "gulp-livereload": "3.8.1",
     "gulp-load-plugins": "1.3.0",
     "gulp-plumber": "1.1.0",
@@ -27,11 +42,11 @@
     "gulp-uglify": "2.0.0",
     "gulp-util": "3.0.7",
     "gulp-watch": "4.3.10",
+    "http-server": "0.9.0",
     "jshint": "2.9.4",
     "jshint-stylish": "2.2.1",
-    "run-sequence": "1.2.2",
-    "http-server": "0.9.0",
-    "postcss-flexibility": "1.1.0"
+    "postcss-flexibility": "1.1.0",
+    "run-sequence": "1.2.2"
   },
   "scripts": {
     "start": "http-server",

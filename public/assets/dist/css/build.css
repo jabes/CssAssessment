@@ -1,0 +1,524 @@
+@charset "UTF-8";
+html {
+  height: 100%; }
+  html * {
+    font-family: 'Open Sans', sans-serif;
+    color: #4b5c66; }
+  html body {
+    min-height: 100%;
+    margin: 0;
+    background-color: #e0e5e9;
+    overflow-x: hidden;
+    box-sizing: border-box; }
+    html body *,
+    html body *::before,
+    html body *::after {
+      box-sizing: inherit; }
+
+#CssAssessment {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 68px 0; }
+  #CssAssessment .heading-block {
+    position: relative;
+    width: 100%;
+    height: 396px; }
+    #CssAssessment .heading-block h2 {
+      margin: 0;
+      padding: 20px 32px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: white;
+      font-size: 3.55rem;
+      font-weight: lighter;
+      letter-spacing: .2rem;
+      line-height: 1.15; }
+      #CssAssessment .heading-block h2 span {
+        display: block;
+        color: inherit;
+        font-weight: bold;
+        letter-spacing: .1rem; }
+  #CssAssessment button.more-details {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    width: 104px;
+    height: 104px;
+    background: white url("../../../assets/dist/img/arrow-down-alt.svg") no-repeat 50% 42%;
+    border: none;
+    border-radius: 100%;
+    font-size: .86rem;
+    line-height: 9.5;
+    transition: all 100ms ease-out; }
+    #CssAssessment button.more-details:hover {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
+  #CssAssessment button.btn {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 30px 26px 30px;
+    padding: 16px 40px 16px 16px;
+    border: none;
+    border-radius: 4px;
+    background: url("../../../assets/dist/img/arrow-right.svg") no-repeat calc(100% - 15px) 50%;
+    font-size: 1.36rem;
+    text-align: left;
+    transition: all 100ms ease-out; }
+    #CssAssessment button.btn.yellow {
+      color: white;
+      background-color: #ffd200; }
+      #CssAssessment button.btn.yellow:hover {
+        background-color: #e6bd00; }
+    #CssAssessment button.btn.green {
+      color: white;
+      background-color: #6fce3c; }
+      #CssAssessment button.btn.green:hover {
+        background-color: #63c030; }
+  #CssAssessment .rating {
+    font-size: 0; }
+    #CssAssessment .rating .star {
+      line-height: 0;
+      vertical-align: top;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url("../../../assets/dist/img/star.svg") no-repeat center center; }
+      #CssAssessment .rating .star.active {
+        background-image: url("../../../assets/dist/img/star-active.svg"); }
+      #CssAssessment .rating .star:not(:first-child) {
+        margin-left: 11px; }
+  #CssAssessment section.hero {
+    width: 100%;
+    padding: 2px 115px;
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    #CssAssessment section.hero .col-left {
+      width: 479px;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin: 0; }
+    #CssAssessment section.hero .col-right {
+      width: 511px;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin: 0;
+      padding-left: 24px; }
+    #CssAssessment section.hero .heading {
+      margin: 82px 0 23px 0;
+      font-size: 5.4rem;
+      letter-spacing: 0.15rem;
+      line-height: .9; }
+      #CssAssessment section.hero .heading .sub {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: normal;
+        letter-spacing: 0.05rem;
+        line-height: 2.1; }
+    #CssAssessment section.hero .product-info .add-to-cart {
+      padding-right: 195px;
+      margin-bottom: 60px; }
+      #CssAssessment section.hero .product-info .add-to-cart .price {
+        float: left;
+        font-weight: normal;
+        font-size: 2.45rem; }
+      #CssAssessment section.hero .product-info .add-to-cart select,
+      #CssAssessment section.hero .product-info .add-to-cart button {
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+        border-radius: 4px;
+        background: white url("../../../assets/dist/img/arrow-down.svg") no-repeat calc(100% - 20px) 50%; }
+      #CssAssessment section.hero .product-info .add-to-cart select {
+        float: right;
+        padding: 7px 45px 7px 22px;
+        margin-top: 4px;
+        font-size: 1.5rem;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none; }
+      #CssAssessment section.hero .product-info .add-to-cart button {
+        clear: both;
+        width: 100%;
+        padding: 17px 45px 17px 28px;
+        margin-top: 20px;
+        font-size: 1.1rem;
+        text-align: left; }
+    #CssAssessment section.hero .product-info .description {
+      margin-top: 0;
+      margin-bottom: 56px;
+      padding-right: 90px;
+      font-size: 1.125rem;
+      line-height: 1.45; }
+    #CssAssessment section.hero .product-info .protection-plan {
+      padding: 24px 30px;
+      margin-right: 90px;
+      background-color: white; }
+      #CssAssessment section.hero .product-info .protection-plan h3 {
+        margin: 0 0 5px 0;
+        font-size: 1.085rem;
+        line-height: 1.5; }
+      #CssAssessment section.hero .product-info .protection-plan .checkbox,
+      #CssAssessment section.hero .product-info .protection-plan .disclaimer {
+        font-size: .88rem;
+        font-weight: bold; }
+      #CssAssessment section.hero .product-info .protection-plan .checkbox {
+        margin-bottom: 10px; }
+        #CssAssessment section.hero .product-info .protection-plan .checkbox input[type="checkbox"] {
+          margin-right: 10px; }
+        #CssAssessment section.hero .product-info .protection-plan .checkbox .cost {
+          margin-left: 18px;
+          color: #0087f2; }
+      #CssAssessment section.hero .product-info .protection-plan .disclaimer {
+        margin: 0; }
+  #CssAssessment section.features {
+    width: 100%;
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    #CssAssessment section.features .col-left {
+      width: 396px;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin: 0; }
+    #CssAssessment section.features .col-right {
+      width: 824px;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      margin: 0; }
+    #CssAssessment section.features .heading-block {
+      background-color: #ea167a; }
+    #CssAssessment section.features .video-thumbs {
+      font-size: 0;
+      height: 0;
+      position: relative; }
+      #CssAssessment section.features .video-thumbs button.video-thumb {
+        cursor: pointer;
+        position: absolute;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 198px;
+        height: 198px;
+        background: black;
+        border: none; }
+        #CssAssessment section.features .video-thumbs button.video-thumb.thumb-1 {
+          top: 0;
+          right: 0; }
+        #CssAssessment section.features .video-thumbs button.video-thumb.thumb-2 {
+          top: 198px;
+          left: 0; }
+        #CssAssessment section.features .video-thumbs button.video-thumb:hover::after {
+          -webkit-transform: scale(1.05);
+              -ms-transform: scale(1.05);
+                  transform: scale(1.05); }
+        #CssAssessment section.features .video-thumbs button.video-thumb:hover img {
+          opacity: .75; }
+        #CssAssessment section.features .video-thumbs button.video-thumb::after {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -27px;
+          margin-left: -27px;
+          width: 54px;
+          height: 54px;
+          font-family: sans-serif;
+          font-size: 2rem;
+          content: "▶";
+          line-height: 43px;
+          text-align: center;
+          text-indent: 5px;
+          background: rgba(255, 255, 255, 0.25);
+          color: white;
+          border: 4px solid white;
+          border-radius: 100%;
+          transition: all 100ms ease-out; }
+        #CssAssessment section.features .video-thumbs button.video-thumb img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          -o-object-fit: fill;
+             object-fit: fill;
+          opacity: .6;
+          transition: all 100ms ease-out; }
+    #CssAssessment section.features .info-blocks {
+      background: white;
+      margin-top: 94px;
+      padding: 9px 10px;
+      -webkit-column-count: 2;
+              column-count: 2;
+      -webkit-column-gap: 26px;
+              column-gap: 26px; }
+      #CssAssessment section.features .info-blocks .info-block {
+        display: inline-block;
+        vertical-align: top;
+        padding: 14px 14px 14px 24px; }
+        #CssAssessment section.features .info-blocks .info-block h6 {
+          margin: 0 0 2px 0;
+          font-size: 1.1rem;
+          font-weight: bold;
+          letter-spacing: .02rem; }
+        #CssAssessment section.features .info-blocks .info-block p {
+          margin: 0;
+          font-size: 1.1rem;
+          line-height: 1.55;
+          letter-spacing: .01rem; }
+  #CssAssessment section.specs {
+    display: block;
+    width: 100%; }
+    #CssAssessment section.specs .row {
+      width: 100%;
+      -js-display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      #CssAssessment section.specs .row .col-left {
+        width: 824px;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        margin: 0; }
+      #CssAssessment section.specs .row .col-right {
+        width: 396px;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        margin: 0; }
+      #CssAssessment section.specs .row.specs {
+        background: white; }
+        #CssAssessment section.specs .row.specs .col-right {
+          width: 410px; }
+    #CssAssessment section.specs .heading-block {
+      background-color: #ffd200; }
+      #CssAssessment section.specs .heading-block img {
+        position: absolute;
+        top: -135px;
+        right: -26px; }
+      #CssAssessment section.specs .heading-block h2 {
+        padding: 40px 24px;
+        letter-spacing: .1rem; }
+    #CssAssessment section.specs .more-details {
+      margin-top: 150px; }
+    #CssAssessment section.specs img.phone-specs {
+      margin-top: 15px; }
+    #CssAssessment section.specs .details-blocks {
+      padding: 15px 25px;
+      -webkit-column-count: 2;
+              column-count: 2;
+      -webkit-column-gap: 0;
+              column-gap: 0; }
+      #CssAssessment section.specs .details-blocks .details-block {
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px;
+        margin-bottom: 5px; }
+        #CssAssessment section.specs .details-blocks .details-block h3 {
+          margin: 0 0 28px 0;
+          font-size: 1.85rem;
+          letter-spacing: .05rem; }
+        #CssAssessment section.specs .details-blocks .details-block h5 {
+          margin: 0 0 5px 0;
+          font-size: 1rem;
+          letter-spacing: .08rem; }
+        #CssAssessment section.specs .details-blocks .details-block p {
+          margin: 0 0 32px 0;
+          font-size: 1rem;
+          letter-spacing: .065rem; }
+    #CssAssessment section.specs button.btn-specs {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 30px 26px 30px;
+      padding: 16px 30px 16px 16px;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      background: #ffd200 url("../../../assets/dist/img/arrow-right.svg") no-repeat calc(100% - 10px) 50%;
+      font-size: 1.36rem;
+      text-align: left;
+      transition: all 100ms ease-out; }
+      #CssAssessment section.specs button.btn-specs:hover {
+        background-color: #e6bd00; }
+  #CssAssessment section.reviews {
+    display: block;
+    width: 100%; }
+    #CssAssessment section.reviews .row {
+      width: 100%;
+      -js-display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      #CssAssessment section.reviews .row .col-left {
+        width: 396px;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        margin: 0; }
+      #CssAssessment section.reviews .row .col-right {
+        width: 824px;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+        margin: 0; }
+    #CssAssessment section.reviews .heading-block {
+      background-color: #6fce3c; }
+      #CssAssessment section.reviews .heading-block h2 {
+        padding: 20px 25px;
+        letter-spacing: .1rem; }
+    #CssAssessment section.reviews .more-details {
+      margin-top: 144px; }
+    #CssAssessment section.reviews .overall-score {
+      padding: 22px 25px;
+      margin-bottom: 22px; }
+      #CssAssessment section.reviews .overall-score h3.heading {
+        margin: 0;
+        font-weight: normal;
+        font-size: 1.4rem;
+        letter-spacing: -.025rem; }
+      #CssAssessment section.reviews .overall-score p.value {
+        margin: 0;
+        font-size: 7.5rem;
+        font-weight: bold;
+        line-height: 1.1; }
+    #CssAssessment section.reviews .review-blocks {
+      background: white;
+      padding: 30px; }
+      #CssAssessment section.reviews .review-blocks .review-block {
+        width: 100%;
+        -js-display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        #CssAssessment section.reviews .review-blocks .review-block:not(:last-child) {
+          margin-bottom: 55px; }
+        #CssAssessment section.reviews .review-blocks .review-block .comment {
+          width: 530px;
+          -webkit-box-flex: 0;
+              -ms-flex-positive: 0;
+                  flex-grow: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+          -ms-flex-preferred-size: auto;
+              flex-basis: auto;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+          margin: 0;
+          padding-right: 45px; }
+          #CssAssessment section.reviews .review-blocks .review-block .comment h3 {
+            margin: 4px 0;
+            font-size: 1.86rem; }
+          #CssAssessment section.reviews .review-blocks .review-block .comment h6 {
+            margin: 0 0 30px 0;
+            font-size: .82rem; }
+          #CssAssessment section.reviews .review-blocks .review-block .comment p {
+            margin: 0;
+            font-size: 1.12rem;
+            line-height: 1.55; }
+        #CssAssessment section.reviews .review-blocks .review-block .categories {
+          width: 234px;
+          -webkit-box-flex: 0;
+              -ms-flex-positive: 0;
+                  flex-grow: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+          -ms-flex-preferred-size: auto;
+              flex-basis: auto;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+          margin: 0;
+          padding-top: 28px; }
+          #CssAssessment section.reviews .review-blocks .review-block .categories .category {
+            margin-bottom: 25px; }
+            #CssAssessment section.reviews .review-blocks .review-block .categories .category h6 {
+              margin: 0 0 7px 0;
+              font-size: 1rem; }
+            #CssAssessment section.reviews .review-blocks .review-block .categories .category .category-scores {
+              font-size: 0;
+              display: block;
+              width: 100%;
+              padding-left: 3px; }
+              #CssAssessment section.reviews .review-blocks .review-block .categories .category .category-scores .category-score {
+                display: inline-block;
+                vertical-align: top;
+                width: 43px;
+                height: 4px;
+                background-color: #e0e5e9; }
+                #CssAssessment section.reviews .review-blocks .review-block .categories .category .category-scores .category-score:not(:first-child) {
+                  margin-left: 4px; }
+                #CssAssessment section.reviews .review-blocks .review-block .categories .category .category-scores .category-score.active {
+                  background-color: #6fce3c; }
